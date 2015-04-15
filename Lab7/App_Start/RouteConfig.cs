@@ -55,14 +55,14 @@ namespace Lab7
             routes.MapRoute(
               name: "ProductDate",
               url: "products/date/{date}/{page}",
-              defaults: new { controller = "Product", action = "Date", date = "2003-02-03", page = "1" },
+              defaults: new { controller = "Product", action = "Date", date = "2015-06-06", page = "1" },
+                
                  constraints: new
                  {
                      date = new DataConstraint(),
                      page = @"\d+"
                  }
               );
-
 
 
             routes.MapRoute(
